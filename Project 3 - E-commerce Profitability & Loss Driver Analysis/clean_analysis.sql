@@ -1,3 +1,6 @@
+
+
+
 --CREATING TABLES
 
 --CREATING Analysis TABLE
@@ -47,16 +50,25 @@ FROM analysis
 GROUP BY order_id, product_id
 HAVING COUNT(*) > 1;
 
--- 2. Do any orders contain zero items?
+-- 2. Checking Null values ?
+
+SELECT *
+FROM analysis
+WHERE order_id IS NULL
+   OR product_id IS NULL
+   OR customer_id IS NULL;
+
+
+-- 3. Do any orders contain zero items OR negative items values ?
 
 SELECT
     order_id,
     SUM(quantity) AS total_quantity
 FROM analysis
 GROUP BY order_id
-HAVING SUM(quantity) = 0;
+HAVING SUM(quantity) = 0 AND SUM(quantity) > 0;
 
--- 3. Are there negative revenues or costs?
+-- 4. Are there negative revenues or costs?
 
 SELECT
     order_id,
@@ -67,7 +79,7 @@ GROUP BY order_id
 HAVING SUM(product_revenue) < 0
     OR SUM(product_cost) < 0;
 
--- 4. Does total revenue equal item revenue + shipping(excluding returns) ?
+-- 5. Does total revenue equal item revenue + shipping(excluding returns) ?.
 
 SELECT
     SUM(product_revenue) + SUM(shipping_fee_allocated)
@@ -76,7 +88,7 @@ FROM analysis
 WHERE order_status != 'Returned';
 
 
--- 5. Does cost aggregate linearly across groupings?
+-- 6. Does cost aggregate linearly across groupings?
 
 WITH
 line_level AS (
@@ -98,7 +110,7 @@ SELECT
 FROM line_level, order_level;
 
 
--- 6. Are negative margins fully explained by loss_driver?
+-- 7. Are negative margins fully explained by loss_driver?
 
 SELECT
     order_id,
@@ -115,7 +127,7 @@ WHERE final_margin < 0
 
 -- Business Logic Validation
 
--- 7. Are discount-driven losses associated with high discounts?
+-- 8. Are discount-driven losses associated with high discounts?
 
 SELECT
     order_id,
@@ -127,7 +139,7 @@ WHERE final_margin < 0
   AND loss_driver = 'Discount-Driven'
   AND discount_pct < 0.30;
 
--- 8. Are return-driven losses associated with returned orders?
+-- 9. Are return-driven losses associated with returned orders?
 
 SELECT
 	order_id,
@@ -138,7 +150,7 @@ WHERE loss_driver = 'Return-Driven' AND order_status <> 'Returned';
 
 -- Executive KPIs
 
--- 9. What is total revenue (excluding returns)?
+-- 10. What is total revenue (excluding returns)?
 
 SELECT 
 	SUM(product_revenue + shipping_fee_allocated) AS total_revenue
@@ -146,7 +158,7 @@ FROM analysis
 WHERE order_status <> 'Returned';
 
 
--- 10, What is profit margin (excluding anomalies) ?
+-- 11. What is profit margin (excluding anomalies) ?
 
 SELECT
     SUM(final_margin)
@@ -156,7 +168,7 @@ FROM analysis
 WHERE order_status <> 'Returned'
   AND margin_flag IN ('Healthy', 'Low Margin');
 
--- 11. What is return rate?
+-- 12. What is return rate?
 
 SELECT
     (CAST(COUNT(DISTINCT CASE WHEN order_status = 'Returned' THEN order_id END) AS FLOAT))
@@ -164,7 +176,7 @@ SELECT
     COUNT(DISTINCT order_id) * 100 AS return_rate
 FROM analysis;
 
--- 12. What % of orders are discount-driven losses?
+-- 13. What % of orders are discount-driven losses?
 
 SELECT
 	CAST(COUNT(DISTINCT CASE WHEN loss_driver = 'Discount-Driven' THEN order_id END) AS FLOAT)
@@ -173,7 +185,7 @@ SELECT
 FROM analysis;
 
 
--- 13. What % of revenue is at low or negative margin?
+-- 14. What % of revenue is at low or negative margin?
 
 SELECT
 	SUM(
