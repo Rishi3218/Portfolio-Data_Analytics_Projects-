@@ -84,10 +84,14 @@ To ensure analytical accuracy, multiple validation checks were performed:
 
 - Duplicate record checks <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/sql_duplicate_record_check.png" width="600">
 
-- Null and missing value analysis
-- Zero and negative quantity validation
-- Revenue vs cost reconciliation
-- Margin sanity checks at order and item levels
+- Null and missing value analysis <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Checking%20NUll%20values%20SQL.png" width="600">
+
+- Zero and negative quantity validation <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Zero%20or%20negative%20quantities.png" width="600">
+
+- Revenue vs cost reconciliation <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Negative%20revenue%20or%20cost.png" width="600">
+
+- Margin sanity checks at order and item levels <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Sanity%20check.png" width="600">
+
 - Cross-Validation between Python and SQL outputs
 
 Only **Validated and reconciled data** was used for final insights and dashboard.
