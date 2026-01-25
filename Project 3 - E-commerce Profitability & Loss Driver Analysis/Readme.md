@@ -129,13 +129,13 @@ Based on the findings, the following actions are recommended:
 The project includes interactive dashboards designed for different stakeholders needs:
 
 - **Executive Overview Dashboard**<br>
-High-Level KPIs: Revenue, profit, margin trends
+High-Level KPIs: Revenue, profit, margin trends <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Executive%20Overview.png" width="800">
 
 - **Risk Monitoring Dashboard**<br>
-Early warning signals for margin erosion and loss drivers
+Early warning signals for margin erosion and loss drivers <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Category%20and%20Risk%20Monitoring.png" width="800">
 
 - **Loss Control Dashboard**<br>
-Product, category, and driver-level loss analysis
+Product, category, and driver-level loss analysis <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Loss%20and%20Operations%20watch.png" width="800">
 
 Dashboards were built with decision-making speed and clarity in mind.
 
