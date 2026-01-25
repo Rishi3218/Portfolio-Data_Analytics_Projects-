@@ -76,6 +76,8 @@ Each step was designed to reduce risk and increase confidence in conclusions.
 
 - Checking Duplicates <br><br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Checking%20duplicates.png" width="600">
 
+- Fixing Null Values <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Fixing%20Null%20Values.png" width="600">
+
 ## ✅ Data Validation & Integrity Checks
 
 To ensure analytical accuracy, multiple validation checks were performed:
