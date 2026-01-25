@@ -82,7 +82,8 @@ Each step was designed to reduce risk and increase confidence in conclusions.
 
 To ensure analytical accuracy, multiple validation checks were performed:
 
-- Duplicate record checks
+- Duplicate record checks <br> <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/sql_duplicate_record_check.png" width="600">
+
 - Null and missing value analysis
 - Zero and negative quantity validation
 - Revenue vs cost reconciliation
