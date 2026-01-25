@@ -72,9 +72,9 @@ Each step was designed to reduce risk and increase confidence in conclusions.
 
 ## 🧹Data Ingestiong and Cleaning
 
-- Data Ingestion <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Data%20ingestion.png" width="600">
+- Data Ingestion <br><br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Data%20ingestion.png" width="600">
 
-- Checking Duplicates <br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Checking%20duplicates.png" width="600">
+- Checking Duplicates <br><br> <img src="https://github.com/Rishi3218/Portfolio-Data_Analytics_Projects-/blob/main/Project%203%20-%20E-commerce%20Profitability%20%26%20Loss%20Driver%20Analysis/Images/Checking%20duplicates.png" width="600">
 
 ## ✅ Data Validation & Integrity Checks
 
