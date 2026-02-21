@@ -1,6 +1,6 @@
-# Rishi Sharma 
-# Data Analyst | SQL • Python • Power BI •  Excel
-# rishisharma3218@gmail.com
+### Rishi Sharma 
+### Data Analyst | SQL • Python • Power BI •  Excel
+### rishisharma3218@gmail.com
 
 # ⚡ Data Analytics Portfolio  
 ### Turning Data into Business Decisions, Not Just Dashboards
