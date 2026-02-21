@@ -21,7 +21,7 @@ Every project here follows a disciplined analytics lifecycle:
 
 **Business Objective → Data Validation → Analysis → Insight → Recommendation**
 
-This is analytics built for **real business environments**, not academic demos.
+This is analytics built for **real business environments**.
 
 ---
 
