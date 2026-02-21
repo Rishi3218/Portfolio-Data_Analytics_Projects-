@@ -3,7 +3,7 @@
 #### rishisharma3218@gmail.com
 
 # ⚡ Data Analytics Portfolio  
-### Turning Data into Business Decisions, Not Just Dashboards
+### Turning Data into Business Decisions
 
 ---
 
